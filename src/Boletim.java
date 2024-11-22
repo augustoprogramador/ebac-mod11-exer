@@ -23,12 +23,12 @@ public class Boletim {
     private void informaAproveitamento(double media) {
         String str = String.format("A média do aluno é: %.2f", media);
         System.out.println(str);
-        if (media <= 4.49) {
+        if (media < 5) {
             System.out.println("O aluno está reprovado!");
             return;
         }
-        if (media >= 4.5 && media <= 5.99) {
-            System.out.println("O aluno está reprovado!");
+        if (media >= 5 && media <= 6.99) {
+            System.out.println("O aluno está de recuperação!");
             return;
         }
         System.out.println("O aluno está APROVADO!!!");
